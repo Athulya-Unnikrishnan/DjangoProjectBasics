@@ -1,0 +1,22 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv(r"C:\Users\\athul\\Downloads\\ip_ipl.csv")
+print(df.head())
+print(df.info())
+df['Runs_Scored'],df['Matches'].plot(kind='hist')
+plt.show()
+print("---------")
+# plt.hist(df["Name_Of_Player"],df["Matches"],color="orange")
+#plt.xlabel("Name Of Player")
+#plt.ylabel("Matches")
+# plt.title("IPL2020 PLAYERS DATASET",color="b")
+# df.plt.hist(bins=12,alpha=0.5)
+#plt.show()
+# print("BAR PLOT")
+# print("--------")
+# plt.bar(df["Name_Of_Player"],df["Matches"],color="r")
+# plt.xlabel("Name_Of_Player")
+# plt.ylabel("Matches")
+# plt.title("IPL2020 PLAYERS DATASET",color="r")
+# plt.show()
